@@ -32,6 +32,6 @@ jobs:
       - name: Run market digest agent
         env:
           GMAIL_USER:     ${{ secrets.GMAIL_USER }}
-          GMAIL_APP_PASS: ${{ secrets.GMAIL_APP_PASS }}
+          GMAIL_APP_PASS: ${{ secrets.GMAIL_APP_PASSWORD }}
           EMAIL_TO:       ${{ secrets.EMAIL_TO }}
         run: python fetch_and_email.py
